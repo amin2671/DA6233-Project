@@ -1,0 +1,108 @@
+---
+title: "Dallas Cowboys"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(sportyR)
+library(dplyr)
+library(ggplot2)
+r1 <- readRDS(file = "/Users/fernandoparedes/Desktop/DA 6233 (Malshe)/Final Project/FlexDashboard Project/Isaac/DA6233-Project-main/RB+WR H/Rb1.rds")
+r2 <- readRDS(file = "/Users/fernandoparedes/Desktop/DA 6233 (Malshe)/Final Project/FlexDashboard Project/Isaac/DA6233-Project-main/RB+WR H/Rb2.rds")
+r3 <- readRDS(file = "/Users/fernandoparedes/Desktop/DA 6233 (Malshe)/Final Project/FlexDashboard Project/Isaac/DA6233-Project-main/RB+WR H/Rb3.rds")
+r4 <- readRDS(file = "/Users/fernandoparedes/Desktop/DA 6233 (Malshe)/Final Project/FlexDashboard Project/Isaac/DA6233-Project-main/RB+WR H/Rb4.rds")
+
+w1 <- readRDS(file = "/Users/fernandoparedes/Desktop/DA 6233 (Malshe)/Final Project/FlexDashboard Project/Isaac/DA6233-Project-main/RB+WR H/wr1.rds")
+w2 <- readRDS(file = "/Users/fernandoparedes/Desktop/DA 6233 (Malshe)/Final Project/FlexDashboard Project/Isaac/DA6233-Project-main/RB+WR H/wr2.rds")
+w3 <- readRDS(file = "/Users/fernandoparedes/Desktop/DA 6233 (Malshe)/Final Project/FlexDashboard Project/Isaac/DA6233-Project-main/RB+WR H/wr3.rds")
+w4 <- readRDS(file = "/Users/fernandoparedes/Desktop/DA 6233 (Malshe)/Final Project/FlexDashboard Project/Isaac/DA6233-Project-main/RB+WR H/wr4.rds")
+
+TopReceivers <- readRDS(file = "/Users/fernandoparedes/Desktop/DA 6233 (Malshe)/Final Project/FlexDashboard Project/Isaac/DA6233-Project-main/Top Rec + Rushers/TopReceivers.rds")
+TopRushers <- readRDS(file = "/Users/fernandoparedes/Desktop/DA 6233 (Malshe)/Final Project/FlexDashboard Project/Isaac/DA6233-Project-main/Top Rec + Rushers/TopRushers.rds")
+
+```
+
+# Week 8 Heat Map (Eagles)
+
+## Column {data-width=500, .tabset}
+
+### RB Wendell Smallwood 
+
+```{r}
+r1
+```
+
+### RB Jay Ajayi (Injured)
+
+```{r}
+r2
+```
+
+### Rb Corey Clement
+
+```{r}
+r3
+```
+
+### RB Josh Adams
+
+```{r}
+r4
+```
+
+
+## Column {data-width=500, .tabset}
+
+### WR Zach Ertz
+
+```{r}
+w1
+```
+
+
+
+
+### Nelson Agholor
+
+```{r}
+w2
+```
+
+### Alshon Jeffery
+
+```{r}
+w3
+```
+
+### Jordan Matthews
+
+```{r}
+w4
+```
+
+# Top Recievers & Rushers
+
+## Column {data-width=500, .tabset}
+
+### Eagles Top Receivers 
+
+```{r}
+TopReceivers
+```
+
+
+
+
+### Eagles Top Rushers
+```{r}
+TopRushers
+```
+
+
+
+
+
